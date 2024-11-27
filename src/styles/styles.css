@@ -1,0 +1,8 @@
+.main-content {
+    margin-left: 100px; /* Offset the main content by the sidebar's width */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    height: 100vh; /* Full viewport height to match the sidebar */
+    overflow-y: auto; /* Enable scrolling for overflowing content */
+    box-sizing: border-box; /* Ensure padding is included in dimensions */
+}
