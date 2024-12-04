@@ -1,5 +1,15 @@
 import React from 'react';
 import '../styles/Analytics.css';
+//import { useNavigate, useState } from 'react';
+import { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+import Rest from './Rest.jsx';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const queryClient = new QueryClient();
+
+
 
 const Analytics = () => {
     return (
@@ -36,6 +46,11 @@ const Analytics = () => {
                 <img src="" alt="No Data"/>
                 <p>No analytical data available</p>
                 <small>Please select a course and lecture to view analytics</small>
+            </div>
+            <div className="analytical-content">
+                <QueryClientProvider client={queryClient}>
+                    <Rest />
+                </QueryClientProvider>
             </div>
         </div>
     )
