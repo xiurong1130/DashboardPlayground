@@ -8,7 +8,9 @@ import Courses from './pages/Courses';
 import Lectures from './pages/Lectures';
 import Notifications from './pages/Notifications';
 import Profile from './pages/Profile';
-// import Dashboard form './components/Dashboard';
+import Settings from './pages/Settings';
+import Students from './pages/Students';
+import AnalyticChart from './pages/AnalyticChart';
 
 function App() {
     return (
@@ -24,6 +26,9 @@ function App() {
                         <Route path="/lectures" element={<Lectures />} />
                         <Route path="/notifications" element={<Notifications />} />
                         <Route path="/profile" element={<Profile />} />
+                        <Route path="/settings" element={<Settings />} />
+                        <Route path="/students" element={<Students />} />
+                        <Route path="/analyticChart" element={<AnalyticChart />} />
                     </Routes>
                 </div>
             </div>

@@ -10,6 +10,9 @@ import {
     faBook,
     faChartPie,
     faBell,
+    faGear,
+    faPerson,
+    faBeer,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
@@ -45,6 +48,21 @@ const Sidebar = () => {
         <li>
           <NavLink to="/notifications" className={({ isActive }) => (isActive ? 'active' : '')}>
             <FontAwesomeIcon icon={faBell} />
+          </NavLink>
+          </li>
+        <li>
+          <NavLink to="/settings" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <FontAwesomeIcon icon={faGear} />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/students" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <FontAwesomeIcon icon={faPerson} />
+          </NavLink>
+          </li>
+        <li>
+          <NavLink to="/analyticChart" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <FontAwesomeIcon icon={faBeer} />
           </NavLink>
         </li>
       </ul>
