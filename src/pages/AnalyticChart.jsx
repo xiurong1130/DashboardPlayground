@@ -31,7 +31,7 @@ const AnalyticChart = () => {
   };
 
   return (
-    <div className="analytics-controls">
+    <div className="analyticChart-controls">
       <Doughnut data={data} />
       <button onClick={updateData}>Refresh</button>
     </div>
